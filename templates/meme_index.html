@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Meme Generator</title>
+<a href="/another_meme"><button type="button" name="myButton">Refresh</button></a>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="30; url=https://flask-meme-generator.herokuapp.com/"/>
+<style>
+body {background-color:#000000;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;text-align: center;}
+p {text-align:center;font-family:Georgia, serif;font-size:48px;font-style:normal;font-weight:normal;color:#ffffff;background-color:#000000;}
+button { color: #ffffff;background-color: #2d63c8;font-size: 19px;border: 1px solid #2d63c8;
+    padding: 15px 50px;
+    cursor: pointer
+}
+button:hover {
+    color: #2d63c8;
+    background-color: #ffffff;
+}
+</style>
+</head>
+<body>
+<p>Here is your meme! This will refresh in 30 seconds!</p>
+<p><img src="{{meme_pic}}"></p>
+<p>Current subreddit: {{subreddit}} </p>
+</body>
+</html>
